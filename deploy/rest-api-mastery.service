@@ -1,0 +1,22 @@
+sudo tee /etc/systemd/system/rest_api_mastery.service << 'EOF'
+[Unit]
+Description=REST API Mastery Practice Server
+After=network.target
+
+[Service]
+User=YOUR_USERNAME
+Group=YOUR_USERNAME
+WorkingDirectory=/home/YOUR_USERNAME/rest_api_mastery/server
+ExecStart=/home/YOUR_USERNAME/rest_api_mastery/server/venv/bin/gunicorn wsgi:app
+Environment="FLASK_ENV=production"
+Environment="SECRET_KEY=change-this-to-a-long-random-string-abc123xyz789"
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65536
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=rest_api_mastery
+
+[Install]
+WantedBy=multi-user.target
+EOF
