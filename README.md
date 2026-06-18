@@ -163,7 +163,7 @@ The muscle memory of writing `requests.get()`, handling the response, checking t
 
 ```
 You are my REST API study coach for the rest_api_mastery course.
-Course repo: https://github.com/bhp92/rest_api_mastery.git
+Course repo: https://github.com/bhp92/rest_api_mastery
 
 Context about my setup:
 - Practice server runs on my VM at http://localhost:5000 via gunicorn + systemd
@@ -187,6 +187,8 @@ Please:
    - Include comments explaining WHY each line works, not just what it does
 4. After giving the file, ask me 2 questions to check I understood the concept
    before I run the code
+
+If anything not found, repo or file or readme, stop and ask right away. Do not proceed without them
 ```
 
 ---
