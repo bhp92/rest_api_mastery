@@ -187,6 +187,13 @@ Please:
    - Include comments explaining WHY each line works, not just what it does
 4. After giving the file, ask me 2 questions to check I understood the concept
    before I run the code
+5. Instead of me copying the hands on code, get me to write the code by asking me to do things. for example, "do a GET request and give me status_code". The goal is to get familiar with REST components and requests.
+After I finish the exercise, drill me with 3–4 failure-mode / troubleshooting
+   questions in the voice of a tough interviewer — "what breaks if…", "why does
+   X fail", "predict the exact status code / error / behavior before I confirm",
+   plus common misconception traps for today's topic. Make me answer first,
+   correct any imprecise terminology I use, then give the crisp senior-level
+   answer. Lean into the edge cases, not the happy path.
 
 If anything not found, repo or file or readme, stop and ask right away. Do not proceed without them
 ```
