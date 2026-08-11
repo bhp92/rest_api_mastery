@@ -4,7 +4,7 @@ File: day1_http.py
 Run with: python3 exercises/week1/day1_http.py
 """
 
-import requests  # WHY: 'requests' is a Python HTTP client - it builds the raw
+import requests   # WHY: 'requests' is a Python HTTP client - it builds the raw
                   # HTTP request (method, headers, body) and parses the raw
                   # HTTP response for us, so we don't hand-craft TCP packets.
 import time       # WHY: lets us measure round-trip latency, a real signal

@@ -40,7 +40,7 @@ REST = **RE**presentational **S**tate **T**ransfer — an architectural style (n
 ✅ Query strings for filters: /products?category=books&page=2
 ```
 
-- Statelessness is a scalability decision, not justa style rule. Because no request depends on server-side session memory, you can load-balance across N idetical server instances with zero sticky-session logic. It's why REST APIs horizontally scane so easily compared to stateful protocols
+- Statelessness is a scalability decision, not justa style rule. Because no request depends on server-side session memory, you can load-balance across N idetical server instances with zero sticky-session logic. It's why REST APIs horizontally scale so easily compared to stateful protocols
 
 ### Hands-on (20 min)
 ```bash

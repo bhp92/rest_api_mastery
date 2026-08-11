@@ -10,13 +10,13 @@ Client                              Server
   |  GET /api/v1/products HTTP/1.1     |
   |  Host: localhost:5000              |
   |  Authorization: Bearer abc123      |
-  | ─────────────────────────────────► |
-  |                                    |  (processes request)
+  | ─────────────────────────────────► |  (processes request)
+  |                                    |
   |  HTTP/1.1 200 OK                   |
   |  Content-Type: application/json    |
   |  X-Response-Time: 12ms             |
   |  {"data": [...]}                   |
-  | ◄───────────────────────────────── |
+  | ◄───────────────────────────────── |  (Server response)
 ```
 
 - HTTP is a stateless, text-based request/response protocol built on TCP. Each request is fully self-contained — the server holds no memory of previous requests unless you explicitly carry state via tokens, cookies, or session IDs. This is why REST APIs need auth headers on every call instead of "logging in once."
